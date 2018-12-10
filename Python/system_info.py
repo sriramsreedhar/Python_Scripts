@@ -28,9 +28,9 @@ def user_name():
 def disk_size():
     BytesPerGB = 1024 * 1024 * 1024
     (total, used, free) = shutil.disk_usage("/")
-    print ("Total Disk Usage        :- %.2fGB" % (float(total)/BytesPerGB))
-    print ("Used                    :-  %.2fGB" % (float(used)/BytesPerGB))
-    print ("Free                    :-  %.2fGB" % (float(free)/BytesPerGB))
+    #return ("Total Disk Usage        :- %.2fGB" % (float(total)/BytesPerGB))
+    #return ("Used                    :-  %.2fGB" % (float(used)/BytesPerGB))
+    return ("Free                    :-  %.2fGB" % (float(free)/BytesPerGB))
 
 clear_screen()
 print ("Name of Operating System is :- ", sys_name())
